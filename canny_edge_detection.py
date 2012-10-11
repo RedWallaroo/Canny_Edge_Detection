@@ -547,10 +547,6 @@ class Cannydetector:
 		return mag_sup
 
 
-#canny = Cannydetector('/users/sandralombardi/ppm images/girlwithdog.ppm',1.4,50,10)
-#im = canny.gradmagnitude
-#Image.fromarray(im).show()
-
 canny = Cannydetector('/users/sandralombardi/downloads/test3.jpg',1.4,50,10)
 im = canny.gradmagnitude
 Image.fromarray(im).show()
