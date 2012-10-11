@@ -1,4 +1,3 @@
-
 import sys
 sys.path.append("/usr/local/lib/python2.7/site-packages/pil")
 sys.path.append("/usr/local/lib/python2.7/site-packages/scipy")
@@ -325,11 +324,7 @@ class Cannydetector:
 	def Separable_Convolution(self,input,kernel):
 
 		''' this is a failed attempt at implementing separable convolution.
-		for some reason, python does not allow for the multiplication of the 
-		5 row kernel times the 512 row set of the input image.
-		after trying to process a 5 x 5 multiplication at the time, it turned out that
-		after the resulting array grows over 300 items, the values of the items
-		were changed and looked weird. perhaps i need to keep trying this though.
+		Need to continue working on this one some more.
 
 		'''
 		#inputs original image and kernel then it applies a 1D convolution horizontally
